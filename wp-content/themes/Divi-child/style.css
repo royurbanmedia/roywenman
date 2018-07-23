@@ -11,3 +11,56 @@
 
 /* =Theme customization starts here
 ------------------------------------------------------- */
+#dot {
+  color: black;
+  line-height: 1px;
+  font-size: 72px;
+  position: absolute;
+  top: 22px;
+  left: 65px;
+}
+
+.blink {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  10% {
+    opacity: 0;
+  }
+}
+
+.background {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+}
+
+.slide {
+  height: 100vh;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  color: white;
+}
+
+.slide1 {
+  background:
+    /* top, transparent red, faked with gradient */
+    linear-gradient(
+       rgba(0,0,0,.7), rgba(0,0,0,.4)
+    ),
+    /* bottom, image */
+    url('img/projects/nextlevelsound.png');
+}
+
+.slide_content_outer {
+  position: absolute;
+  bottom: 0;
+  width:100%;
+  padding-bottom: 150px;
+  background-color: rgb(60, 60, 60, .8);
+}
+
+.slide_content_outer article {
+  padding: 20px;
+}
