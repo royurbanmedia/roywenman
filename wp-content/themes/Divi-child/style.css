@@ -57,10 +57,19 @@
   position: absolute;
   bottom: 0;
   width:100%;
-  padding-bottom: 150px;
+  padding-bottom: 130px;
+  padding-top: 20px;
   background-color: rgb(60, 60, 60, .8);
 }
 
 .slide_content_outer article {
   padding: 20px;
+  width: 40%;
+  display: inline;
+}
+
+.slide_content_outer section {
+  padding: 20px;
+  width: 60%;
+  display: inline;
 }
